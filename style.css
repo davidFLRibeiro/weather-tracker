@@ -1,0 +1,376 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  margin-top: 150px;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  margin: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  color: white;
+}
+
+.grid-block {
+  margin-top: 50px;
+  border: 1px solid #79adbe;
+  background: black;
+  width: 300px;
+  height: 300px;
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.island-image {
+  min-width: 100px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.island-text {
+  text-align: center;
+  background: blue;
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.weather-title {
+  background: blue;
+  text-align: center;
+  font-size: 32px;
+  padding: 15px;
+}
+
+.weather-graphic {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.weather-graphic-image {
+  width: 120px;
+  height: 120px;
+}
+
+.beach-verdict {
+  width: 120px;
+  padding: 8px;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.beach-verdict-true {
+  background: green;
+}
+
+.beach-verdict-false {
+  background: red;
+}
+
+.weather-info {
+  height: 150px;
+}
+
+.weather-data {
+  display: flex;
+  min-width: 300px;
+}
+
+.weather-data-info {
+  height: 150px;
+  min-width: 20%;
+  width: 33%;
+  padding: 2px;
+  margin: 2px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.temperature {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.humidity {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.precipitation {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1600px) {
+  .weather-data-info {
+    padding: 2px;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 50%;
+    height: 20px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: auto;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid-block {
+    margin-top: 50px;
+    border: 1px solid #79adbe;
+    background: black;
+    width: 250px;
+    height: 300px;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+
+  .modal-content {
+    padding: 5px;
+    width: 90%;
+    position: relative;
+  }
+
+  .weather-data {
+    width: 100%;
+    height: 100px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .weather-data-info {
+    width: 50%;
+    height: 20px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .weather-title {
+    background: blue;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .weather-graphic-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .beach-verdict {
+    width: 100px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .weather-data-info {
+    font-size: 18px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 50%;
+    height: 20px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 1px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  header {
+    position: fixed;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .grid-block {
+    margin-top: 50px;
+    border: 1px solid #79adbe;
+    background: black;
+    width: 250px;
+    height: 300px;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .modal {
+    margin-top: 25px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .modal-content {
+    padding: 5px;
+    width: 90%;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .weather-data {
+    width: 100%;
+    height: 100px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: auto;
+    padding-right: 10%;
+  }
+
+  .weather-title {
+    background: blue;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .weather-graphic-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .beach-verdict {
+    width: 100px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid purple;
+  }
+}
